@@ -1,0 +1,4 @@
+[Wed Aug 10 14:54:10.122029 2022] [php:error] [pid 1720] [client 127.0.0.1:56013] PHP Fatal error:  Trait "App\\Traits\\RedirectsUsers" not found in /Users/aleksandrpsenicnyj/Sites/cityman.alex/app/Traits/ResetsPasswords.php on line 12
+[Wed Aug 10 14:54:10.914977 2022] [php:error] [pid 1721] [client 127.0.0.1:56014] PHP Fatal error:  Trait "App\\Traits\\RedirectsUsers" not found in /Users/aleksandrpsenicnyj/Sites/cityman.alex/app/Traits/ResetsPasswords.php on line 12
+[Wed Aug 10 14:54:19.033572 2022] [php:error] [pid 1722] [client 127.0.0.1:56033] PHP Fatal error:  Trait "App\\Traits\\RedirectsUsers" not found in /Users/aleksandrpsenicnyj/Sites/cityman.alex/app/Traits/ResetsPasswords.php on line 12
+[Wed Aug 10 14:54:19.735180 2022] [php:error] [pid 1724] [client 127.0.0.1:56034] PHP Fatal error:  Trait "App\\Traits\\RedirectsUsers" not found in /Users/aleksandrpsenicnyj/Sites/cityman.alex/app/Traits/ResetsPasswords.php on line 12

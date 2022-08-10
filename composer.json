@@ -6,7 +6,13 @@
     "type": "project",
     "require": {
         "php": "^8.0",
-        "laravel/lumen-framework": "^9.0"
+        "flipbox/lumen-generator": "^9.1",
+        "guzzlehttp/guzzle": "^7.4",
+        "illuminate/mail": "^9.24",
+        "illuminate/notifications": "^9.24",
+        "laravel/lumen-framework": "^9.0",
+        "pearl/lumen-request-validate": "^1.7",
+        "ramsey/uuid": "^4.4"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

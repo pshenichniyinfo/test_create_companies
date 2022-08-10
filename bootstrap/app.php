@@ -23,9 +23,9 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
-// $app->withFacades();
+ $app->withFacades();
 
-// $app->withEloquent();
+ $app->withEloquent();
 
 /*
 |--------------------------------------------------------------------------
@@ -60,7 +60,8 @@ $app->singleton(
 */
 
 $app->configure('app');
-
+$app->configure('mail');
+$app->configure('services');
 /*
 |--------------------------------------------------------------------------
 | Register Middleware
@@ -79,6 +80,9 @@ $app->configure('app');
 // $app->routeMiddleware([
 //     'auth' => App\Http\Middleware\Authenticate::class,
 // ]);
+$app->routeMiddleware([
+    'apiToken' => App\Http\Middleware\ApiToken::class,
+]);
 
 /*
 |--------------------------------------------------------------------------
@@ -91,10 +95,15 @@ $app->configure('app');
 |
 */
 
-// $app->register(App\Providers\AppServiceProvider::class);
-// $app->register(App\Providers\AuthServiceProvider::class);
+ $app->register(App\Providers\AppServiceProvider::class);
+ $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
+$app->register(Pearl\RequestValidate\RequestServiceProvider::class);
+$app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
 
+$app->register(Illuminate\Mail\MailServiceProvider::class);
+$app->register(Illuminate\Auth\Passwords\PasswordResetServiceProvider::class);
+$app->register(Illuminate\Notifications\NotificationServiceProvider::class);
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes
